@@ -124,9 +124,8 @@ button {
 }
 .section {
   position: relative;
-  display: flex;
+  @include center-flex("ver");
   flex-direction: column;
-  align-items: center;
   &_text {
     width: 526px;
     margin: 50px auto;

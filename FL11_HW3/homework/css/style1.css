@@ -88,8 +88,8 @@ button {
 .section {
   position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column; }
   .section_text {
     width: 526px;
     margin: 50px auto;
