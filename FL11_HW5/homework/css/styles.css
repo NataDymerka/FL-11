@@ -164,9 +164,12 @@ footer > p {
   }
 }
 @media screen and (min-width: 1400px) {
+  body {
+    max-width: 1400px;
+  }
   main {
     display: grid;
-    grid-template-columns: 74% 24%;
+    grid-template-columns: 74% 24.5%;
     font-size: 18px;
   }
   header {
