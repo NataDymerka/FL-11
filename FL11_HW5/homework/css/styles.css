@@ -1,3 +1,11 @@
+/* :root {
+  --bg-color--dark: #0b192f;
+  --bg-color--header: #162b4d;
+  --link: #fff;
+  --link--hover: #b8b8b8;
+  --bg-footer-color: #162b4d;;
+} */
+
 .post-1 {
   background: #b71757;
 }
