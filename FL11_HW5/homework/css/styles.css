@@ -198,6 +198,7 @@ footer > p {
   }
   .menu-item:hover {
     cursor: pointer;
+    transition: all .5s linear;
     background: rgba(184, 184, 184, 0.2);
   }
   .logo {
@@ -247,6 +248,7 @@ footer > p {
   }
   h2:hover,
   .item-img:hover {
+    transition: all .3s linear;
     opacity: 0.5;
     cursor: pointer;
   }
