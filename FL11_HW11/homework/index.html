@@ -8,40 +8,16 @@
   </head>
   <body>
     <div id="root">
-      <div><p>TODO cat list</p></div>
+      <h1>TODO cat list</h1>
       <div class="add_action">
-        <textarea name="text-area" rows="1" placeholder="Add new action">
-        </textarea>
-        <div><i class="material-icons add">add_box</i></div>
+        <input id="input-text" type="text" placeholder="Add new action" />
+        <button class="btn_add_action">
+          <i class="material-icons add" onclick="createElem('any')">add_box</i>
+        </button>
       </div>
-      <div class="line"></div>
+      <hr />
       <div class="list">
-        <ol>
-          <li>
-            <div>
-            <i class="material-icons">done</i>
-            <span>Find the cat</span>
-            <i class="material-icons">create</i>
-          </div>
-            <i class="material-icons delete">delete</i>
-          </li>
-          <li>
-              <div>
-            <i class="material-icons">done</i>
-            <span>Love cat</span>
-            <i class="material-icons">create</i>
-          </div>
-            <i class="material-icons delete">delete</i>
-          </li>
-          <li>
-              <div>
-            <i class="material-icons">done</i>
-            <span>Bath a cat</span>
-            <i class="material-icons">create</i>
-          </div>
-            <i class="material-icons delete">delete</i>
-          </li>
-        </ol>
+        <ol></ol>
       </div>
     </div>
     <script src="./src/app.js"></script>

@@ -4,10 +4,11 @@ body {
   color: lightskyblue;
 }
 
-p {
+h1 {
   font-size: 24px;
   font-weight: bold;
   text-align: center;
+  color: lightskyblue;
 }
 
 ol {
@@ -15,10 +16,11 @@ ol {
   list-style: none;
   padding: 0;
 }
-textarea {
+input {
   resize: none;
   width: 90%;
   height: 40px;
+  padding-left: 10px;
 }
 .add_action {
   display: flex;
@@ -26,15 +28,20 @@ textarea {
   align-items: center;
 }
 .add {
-  width: 30px;
-  height: 30px;
-  color: gray;
-  font-size: 45px;
-  padding: 0 15px;
+  width: 40px;
+  height: 40px;
+  /* color: gray; */
+  font-size: 42px;
+  padding: 0;
 }
 .btn_add_action {
   padding: 0;
   margin: 0;
+  color: gray;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: white;
 }
 li {
   width: 100%;
@@ -50,12 +57,24 @@ li > div {
 span {
   font-size: 18px;
   padding: 0 15px;
+  color: lightskyblue;
+  font-weight: 600;
 }
-.line {
-  content: "";
-  width: 800px;
+hr {
   height: 5px;
   color: lightskyblue;
   margin: 20px auto;
-  
+  /* border: none; */
+}
+.square {
+  color: grey;
+  font-size: 36px;
+}
+.check-box {
+  position: relative;
+}
+.done {
+  position: absolute;
+  transform: translate(30%, -150%);
+  visibility: hidden;
 }
