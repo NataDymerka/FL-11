@@ -7,12 +7,30 @@
     <link rel="stylesheet" href="./assets/styles.css" />
   </head>
   <body>
+    <p>
+      Using the standard JavaScript functions, create a TODO task list to
+      prepare cat for doctor visit.<br />
+      The list should support following functionality: Task:<br />
+      - Add new action. If ‘add new action’ input is empty plus button is
+      disabled. <br />
+      - Mark action as done. Marked action can’t be unchecked. (checkbox)<br />
+      - Edit action. When user press ‘edit’ icon, label change to input field
+      where user passed new item name and then press button ‘save’, then item
+      name is change;<br />
+      - Delete action. When user press ‘delete’ icon, item is removed without
+      any confirmation.<br />
+      - Drag & drop action. Each item can be moved up and down through list.<br />
+      - Max item per list is 10. <br />
+      - When list is full, input and plus button are disabled. Under ‘TODO Cat
+      list’ header, notification ‘Maximum item per list are created’ is
+      displayed.
+    </p>
     <div id="root">
       <h1>TODO cat list</h1>
       <div class="add_action">
         <input id="input-text" type="text" placeholder="Add new action" />
-        <button class="btn_add_action">
-          <i class="material-icons add" onclick="createElem('any')">add_box</i>
+        <button class="btn add-action">
+          <i class="material-icons add">add_box</i>
         </button>
       </div>
       <hr />
