@@ -12,10 +12,6 @@ inputField.addEventListener('keyup', btnActive);
 
 addBtn.disabled = true;
 
-//example of a list item
-let example = createLi('catch the cat');
-addEventHandlers(example);
-
 //add list items from a local storage
 createItemFromLocalStorage();
 
@@ -203,8 +199,9 @@ function addToLocalStorage() {
     }
 }
 function createItemFromLocalStorage() {
-    if (localStorage.getItem('items') === null) {
-        // empty
+    if (localStorage.getItem('items') === null) { //if local storege is empty, example of a list item is created
+        let example = createLi('catch the cat');
+        addEventHandlers(example);
     } else {
         let string = localStorage.getItem('items').split(';;');
         string.forEach(el => {
